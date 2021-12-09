@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A393260275BD3110087A1EA /* MetalFunctions.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5A39325F275BD3110087A1EA /* MetalFunctions.metal */; };
+		5A50475A2757678300DA234D /* matrixLib in Frameworks */ = {isa = PBXBuildFile; productRef = 5A5047592757678300DA234D /* matrixLib */; };
+		5A50475E2757697400DA234D /* 3dInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50475D2757697400DA234D /* 3dInterface.swift */; };
 		5AB41EB32756C4160008CE53 /* Project_I_C_A_R_U_SApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB41EB22756C4160008CE53 /* Project_I_C_A_R_U_SApp.swift */; };
 		5AB41EB52756C4160008CE53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB41EB42756C4160008CE53 /* ContentView.swift */; };
 		5AB41EB72756C4170008CE53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB41EB62756C4170008CE53 /* Assets.xcassets */; };
 		5AB41EBA2756C4170008CE53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB41EB92756C4170008CE53 /* Preview Assets.xcassets */; };
+		5AB41EC52756C5210008CE53 /* Projection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB41EC42756C5210008CE53 /* Projection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A39325F275BD3110087A1EA /* MetalFunctions.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalFunctions.metal; sourceTree = "<group>"; };
+		5A50475D2757697400DA234D /* 3dInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3dInterface.swift; sourceTree = "<group>"; };
 		5AB41EAF2756C4160008CE53 /* Project I.C.A.R.U.S.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project I.C.A.R.U.S.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB41EB22756C4160008CE53 /* Project_I_C_A_R_U_SApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_I_C_A_R_U_SApp.swift; sourceTree = "<group>"; };
 		5AB41EB42756C4160008CE53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5AB41EB62756C4170008CE53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AB41EB92756C4170008CE53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5AB41EBB2756C4170008CE53 /* Project_I_C_A_R_U_S.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Project_I_C_A_R_U_S.entitlements; sourceTree = "<group>"; };
+		5AB41EC42756C5210008CE53 /* Projection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A50475A2757678300DA234D /* matrixLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +62,9 @@
 			children = (
 				5AB41EB22756C4160008CE53 /* Project_I_C_A_R_U_SApp.swift */,
 				5AB41EB42756C4160008CE53 /* ContentView.swift */,
+				5AB41EC42756C5210008CE53 /* Projection.swift */,
+				5A39325F275BD3110087A1EA /* MetalFunctions.metal */,
+				5A50475D2757697400DA234D /* 3dInterface.swift */,
 				5AB41EB62756C4170008CE53 /* Assets.xcassets */,
 				5AB41EBB2756C4170008CE53 /* Project_I_C_A_R_U_S.entitlements */,
 				5AB41EB82756C4170008CE53 /* Preview Content */,
@@ -85,6 +96,9 @@
 			dependencies = (
 			);
 			name = "Project I.C.A.R.U.S";
+			packageProductDependencies = (
+				5A5047592757678300DA234D /* matrixLib */,
+			);
 			productName = "Project I.C.A.R.U.S";
 			productReference = 5AB41EAF2756C4160008CE53 /* Project I.C.A.R.U.S.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 5AB41EA62756C4160008CE53;
+			packageReferences = (
+				5A5047582757678300DA234D /* XCRemoteSwiftPackageReference "matrixLib" */,
+			);
 			productRefGroup = 5AB41EB02756C4160008CE53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A50475E2757697400DA234D /* 3dInterface.swift in Sources */,
 				5AB41EB52756C4160008CE53 /* ContentView.swift in Sources */,
 				5AB41EB32756C4160008CE53 /* Project_I_C_A_R_U_SApp.swift in Sources */,
+				5A393260275BD3110087A1EA /* MetalFunctions.metal in Sources */,
+				5AB41EC52756C5210008CE53 /* Projection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +296,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,6 +324,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A5047582757678300DA234D /* XCRemoteSwiftPackageReference "matrixLib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shlegg4/matrixLib";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A5047592757678300DA234D /* matrixLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A5047582757678300DA234D /* XCRemoteSwiftPackageReference "matrixLib" */;
+			productName = matrixLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AB41EA72756C4160008CE53 /* Project object */;
 }
